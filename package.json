@@ -1,0 +1,19 @@
+{
+  "name": "com.constantin.utils",
+  "version": "1.0.1",
+  "displayName": "ConstantinUtils",
+  "description": "My Utils",
+  "unity": "2020.3",
+  "unityRelease": "22f1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [],
+  "author": {
+    "name": "constantin",
+    "email": "constantin.mgn@gmail.com",
+    "url": "https://www.unity3d.com"
+  },
+  "type": "tool",
+  "hideInEditor": false
+}
