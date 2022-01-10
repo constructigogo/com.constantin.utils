@@ -30,7 +30,11 @@ namespace Constantin.Utils
             {
                 for (int i = 0; i < managedItems.Count; i++)
                 {
-                    managedItems[i].ManualUpdate();
+                    if (managedItems[i].gameObject.activeInHierarchy)
+                    {
+                        managedItems[i].ManualUpdate();
+                    }
+                    
                 }
             }
             
@@ -42,7 +46,10 @@ namespace Constantin.Utils
             {
                 for (int i = 0; i < managedItems.Count; i++)
                 {
-                    managedItems[i].ManualFixedUpdate();
+                    if (managedItems[i].gameObject.activeInHierarchy)
+                    {
+                        managedItems[i].ManualFixedUpdate();
+                    }
                 }
             }
         }
@@ -53,7 +60,10 @@ namespace Constantin.Utils
             {
                 for (int i = 0; i < managedItems.Count; i++)
                 {
-                    managedItems[i].ManualLateUpdate();
+                    if (managedItems[i].gameObject.activeInHierarchy)
+                    {
+                        managedItems[i].ManualLateUpdate();
+                    }
                 }
             }
             
